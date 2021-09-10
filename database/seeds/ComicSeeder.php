@@ -13,5 +13,15 @@ class ComicSeeder extends Seeder
     public function run()
     {
         $comic = new Comic();
+
+        $comic->id = 1;
+        $comic->tipologia = "fantasy";
+        $comic->shop = "online";
+        $comic->characters = "Marvel";
+        $comic->tv = "k2";
+        $comic->videos = "10 episodi";
+
+        $comic->save();
+        
     }
 }
